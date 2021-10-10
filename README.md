@@ -11,7 +11,7 @@ See example of using [project_sample](https://github.com/Volkova-Natalia/aiohttp
 #### Install the application
 The application is **not published**, so you should use link to the github repository:  
 ```
-https://github.com/Volkova-Natalia/aiohttp_lamp/raw/master/dist/aiohttp_lamp-0.1.tar.gz
+https://github.com/Volkova-Natalia/aiohttp_lamp/raw/main/dist/aiohttp_lamp-0.1.tar.gz
 ```
 
 ---
