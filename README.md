@@ -5,7 +5,7 @@ Packaged WebSockets client to manage a lamp (using aiohttp).
 ---
 ## Using
 
-See example of using [project_sample](https://github.com/Volkova-Natalia/aiohttp_lamp/blob/main/aiohttp_lamp/project_sample).  
+See example of using [project_sample](https://github.com/Volkova-Natalia/aiohttp_lamp/blob/main/project_sample).  
 
 ---
 #### Install the application
@@ -16,7 +16,7 @@ https://github.com/Volkova-Natalia/aiohttp_lamp/raw/master/dist/aiohttp_lamp-0.1
 
 ---
 #### Create .env
-If you want, you can define environment variables (see file [project_sample/.env.sample](https://github.com/Volkova-Natalia/aiohttp_lamp/blob/main/aiohttp_lamp/project_sample/.env.sample)):  
+If you want, you can define environment variables (see file [project_sample/.env.sample](https://github.com/Volkova-Natalia/aiohttp_lamp/blob/main/project_sample/.env.sample)):  
 * DEBUG (default "True")  
 * SERVER_HOST (default "127.0.0.1")  
 * SERVER_PORT (default "9999")  
@@ -32,8 +32,8 @@ The client use WebSockets.
 You have to run server (WebSockets) on http://127.0.0.1:9999   
 You can choose another host and port and define they as environment variables, but the client does not use https.  
 Next, you can run the client.  
-See example of the server [project_sample/src/server_example.py](https://github.com/Volkova-Natalia/aiohttp_lamp/blob/main/aiohttp_lamp/project_sample/src/server_example.py).  
-Sample of using the client ([project_sample/src/main.py](https://github.com/Volkova-Natalia/aiohttp_lamp/blob/main/aiohttp_lamp/project_sample/src/main.py)):  
+See example of the server [project_sample/src/server_example.py](https://github.com/Volkova-Natalia/aiohttp_lamp/blob/main/project_sample/src/server_example.py).  
+Sample of using the client ([project_sample/src/main.py](https://github.com/Volkova-Natalia/aiohttp_lamp/blob/main/project_sample/src/main.py)):  
 ```python
 my_lamp = Lamp(debug=DEBUG)
 ws_client = WSClient(server_host=SERVER_HOST, server_port=SERVER_PORT, lamp=my_lamp)
@@ -57,4 +57,4 @@ Commands:
 * The lamp color when the lamp is turned off can be anything - this is the future color of the lamp.  
 * You can get the state of the lamp from its properties: **lamp.state** and **lamp.color**.  
 
-See details [Lamp.pdf](https://github.com/Volkova-Natalia/aiohttp_lamp/blob/main/aiohttp_lamp/Lamp.pdf).  
+See details [Lamp.pdf](https://github.com/Volkova-Natalia/aiohttp_lamp/blob/main/Lamp.pdf).  
