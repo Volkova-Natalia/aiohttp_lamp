@@ -1,0 +1,3 @@
+-r work_after_building_base.txt
+
+../dist/aiohttp_lamp-0.1.tar.gz
