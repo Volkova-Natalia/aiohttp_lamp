@@ -20,7 +20,6 @@ def test():
     subprocess.run(["python", "setup.py", "sdist"])
     subprocess.run(["pip", "install", "virtualenv"])
     subprocess.run(["virtualenv", r"project_sample\venv"])
-    # subprocess.run([r"project_sample\venv\Scripts\pip", "install", "-r", r"project_sample\requirements\work_after_building_local.txt"])
     subprocess.run([r"project_sample\venv\Scripts\pip", "install", "-r", r"project_sample\requirements\work_after_building_base.txt"])
     subprocess.run([r"project_sample\venv\Scripts\pip", "install", r"dist\aiohttp_lamp-0.1.tar.gz"])
     subprocess.run(["pytest", "tests"])

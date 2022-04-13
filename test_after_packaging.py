@@ -17,7 +17,6 @@ def test():
 
     subprocess.run(["pip", "install", "virtualenv"])
     subprocess.run(["virtualenv", r"project_sample\venv"])
-    # subprocess.run([r"project_sample\venv\Scripts\pip", "install", "-r", r"project_sample\requirements\test_after_packaging.txt"])
     subprocess.run([r"project_sample\venv\Scripts\pip", "install", r"."])
     subprocess.run([r"project_sample\venv\Scripts\pip", "install", r"aiohttp>=3.7.4.post0"])
     subprocess.run([r"project_sample\venv\Scripts\pip", "install", r"pytest>=6.2.5"])
