@@ -7,7 +7,7 @@ class WSClient:
     def __init__(self, server_host='127.0.0.1', server_port=9999, lamp=None):
         self.server_host = server_host
         self.server_port = server_port
-        self.server = 'http://' + server_host + ':' + str(server_port)
+        self.server = fr'http://{server_host}:{server_port}'
         self.lamp = lamp if lamp else Lamp()
         self.loop = asyncio.get_event_loop()
 

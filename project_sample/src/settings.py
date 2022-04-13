@@ -11,4 +11,4 @@ DEBUG = bool(strtobool(os.getenv('DEBUG', 'True')))
 
 SERVER_HOST = os.getenv('SERVER_HOST', '127.0.0.1')
 SERVER_PORT = int(os.getenv('SERVER_PORT', '9999'))
-SERVER = SERVER_HOST + ':' + str(SERVER_PORT)
+SERVER = '{SERVER_HOST}:{SERVER_PORT}'
